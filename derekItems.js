@@ -871,7 +871,7 @@ newItem(
 	"Daves Pot",
 	"Only a crazy person would use this as a hat",
 	"head",
-	"item_DavesPot",
+	"菜",
 	"davesPot",
 	"potion healing",
 	4
