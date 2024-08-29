@@ -144,7 +144,7 @@ var cnItems = {
     "Ka-ching!": "咔嚓!",
     "Very luxurious axe": "非常豪华的斧头",
     "Check it out": "去看看",
-    "You see a small object in the distance. Is it a flying saucer? With a tiny gnome-like guy sitting in it? Smiling?": "你看到远处有一个小物体。它是一个飞碟吗?里面坐着个侏儒似的家伙?微笑?",
+    "You see a small object in the distance. Is it a flying saucer? With a tiny gnome-like guy sitting in it? Smiling?": "你看到远处有一个小物体。它是一个飞碟吗?里面坐着个矮人似的家伙?微笑?",
     "Space Ben is sitting in his space shop.. Looking at you. Do you want to buy something? Do you?": "太空本坐在他的太空商店里。看着你。你想买什么东西吗?是吗?",
     "Starmap": "星图",
     "Green USB stick": "绿色U盘",
@@ -496,25 +496,26 @@ var cnItems = {
     "The Garden Boys": "花园男孩",
     "Examine Dungeon": "检查地牢",
     "The Garden Boys are trying to look innocent. Do you want to hire one of them for a some sneaky spelunking?": "花园少年试图装出无辜的样子。你想雇他们中的一个来做一些秘密的洞穴探索吗?",
-    "Lil' Gnomey's brags about having reached": "小侏儒吹嘘自己已经到达",
-    "The gnome puts on his sneaky shoes. The dungeon awaits.": "侏儒穿上了他那双鬼鬼祟祟的鞋子。地牢在等着你。",
+    "Lil' Gnomey's brags about having reached": "小矮人吹嘘自己已经到达",
+    "The gnome puts on his sneaky shoes. The dungeon awaits.": "矮人穿上了他那双鬼鬼祟祟的鞋子。地牢在等着你。",
     "Don't wake up any Derekulians!": "别吵醒任何德雷库尔人!",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
+    "You take a peek down the dungeon. Dungeons like these used to be filled with jerks, but a dead planet can't sustain any jerks. Now all you can hear from the depths are the bored howls of old Derekulians.": "你往地牢里看了一眼。像这样的地下城过去充满了混蛋，但一个死亡的星球无法承受任何混蛋。现在你能从深处听到的只有老德雷库利安人无聊的嚎叫。",
+    "There could still be treasure down there.. If only you had somebody who could sneak down there, without getting noticed by the bored bulls": "下面可能还有宝藏……要是有人能偷偷溜过去，不被那些无聊的公牛发现就好了",
+    "Shhh! Door (7% risk of detection)": "嘘！门 (被发现的风险为0%)",
+    "Coco Door (7% risk of detection)": "可可之门 (被发现的风险为7%)",
+    "Your gnome is on": "你的矮人当前是地牢",
+    "of the dungeon.": "。",
+    "There are two doors. Which one should the gnome enter?": "有两扇门。矮人应该进入哪一个?",
+    "There's an ancient party going on in there.. You are unsure if anybody even enjoys it anymore.": "那里正在举行一场古老的派对。你不确定是否还有人喜欢它。",
+    "But you are here to sell your coco, so stop worrying about that.": "但你是来卖可可的，所以别再担心了。",
+    "You have left around": "你留下了",
+    "at the bar. They earn": "在酒吧。它们赚取",
+    "every 10 seconds!": "每10秒！",
+    "How does this work?": "这是如何工作的呢?",
+    "It's easier to sell to happy customers. Will give you more gold every 10 seconds": "这样更容易把产品卖给满意的客户。每10秒会给你更多的黄金",
+    "Deposit coco": "放入可可",
+    "Buy a round of drinks": "请大家喝一杯",
+    "Get the gold (more than 25 gold)": "获得黄金 (需超过25黄金)",
     "": "",
     "": "",
     "": "",
@@ -781,7 +782,7 @@ var cnItems = {
 
 //需处理的前缀，此处可以截取语句开头部分的内容进行汉化
 //例如：Coin: 13、Coin: 14、Coin: 15... 这种有相同开头的语句
-//可以在这里汉化开头："Coin: ":"金币: "
+//可以在这里汉化开头："Coin: ":"黄金: "
 var cnPrefix = {
     "\n": "\n",
     "                   ": "",
@@ -861,7 +862,7 @@ var cnPrefix = {
 
 //需处理的后缀，此处可以截取语句结尾部分的内容进行汉化
 //例如：13 Coin、14 Coin、15 Coin... 这种有相同结尾的语句
-//可以在这里汉化结尾：" Coin":" 金币"
+//可以在这里汉化结尾：" Coin":" 黄金"
 var cnPostfix = {
     "                   ": "",
     "                  ": "",
@@ -1030,7 +1031,7 @@ var cnRegReplace = new Map([
     [/^([\d\.,]+) \+ ([\d\.,]+) wood$/, '$1 \+ $2 木头'],
     [/^([\d\.,]+) damage$/, '$1 伤害'],
     [/^([\d\.,]+) elves$/, '$1 精灵'],
-    [/^Hire Lil\' Gnomey \(([\d\.,]+) stardust\)$/, '雇佣小侏儒 \($1 星尘\)'],
+    [/^Hire Lil\' Gnomey \(([\d\.,]+) stardust\)$/, '雇佣小矮人 \($1 星尘\)'],
     [/^Hire Cat Paws Calvin \(([\d\.,]+) stardust\)$/, '雇佣猫爪加尔文 \($1 星尘\)'],
     [/^Hire Tip Toe Tyler \(([\d\.,]+) stardust\)$/, '雇佣泰勒 \($1 星尘\)'],
     [/^Sell \(([\d\.,]+) gold\)$/, '出售 \($1 黄金\)'],
